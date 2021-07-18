@@ -21,6 +21,7 @@ function validateInput(){
     onSuccess(year)
   }
 }
+
 var CC, YY, MM, DD, d, dayValue;
 var dayNames = ["Sunday","Monday","Tuesday","Wednesday", "Thursday", "Friday","Saturday" ];
 var maleNames = ["Kwasi","Kwadwo","Kwabena","Kwaku","Yaw", "Kofi","Kwame"];
@@ -36,6 +37,7 @@ var femaleNames = ["Akosua","Adwoa","Abenaa","Akua"," Yaa","Afua","Ama"];
     console.log(d);
     return (Math.floor(d));
   }
+
   function getGender(){
     var genders = document.getElementsByName("gender");
     if(genders[0].checked == true){
@@ -47,3 +49,4 @@ var femaleNames = ["Akosua","Adwoa","Abenaa","Akua"," Yaa","Afua","Ama"];
     else{
       return false;
     }
+  }
