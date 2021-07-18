@@ -60,14 +60,17 @@
       <div class="form-group">
         <label for="date">Date of Birth:</label>
         <input type="number" class="form-control" id="date" placeholder="DD" name="date" min="1" max="31" required>
+        <small>email can't be blank!</small>
       </div>
       <div class="form-group">
         <label for="month">Month of Birth:</label>
         <input type="number" class="form-control" id="month" placeholder="MM" name="month" min="1" max="12" required>
+        <small>email can't be blank!</small>
       </div>
       <div class="form-group">
         <label for="number">Year of Birth:</label>
         <input type="number" class="form-control" id="year" placeholder="YYYY" name="year" required>
+        <small>email can't be blank!</small>
       </div>
       <div class="form-group">
         <label for="month">Gender</label><br>
@@ -88,10 +91,11 @@
     </form>
    </div>   
    
-   <input type="radio" name="gender" value="Male"> Male<br>
-   <input type="radio" name="gender" value="Female">Female<br>
-   <input type="submit" value="Submit" onclick="pull()"><br>
-   <p id="display"></p>
+   <div class="form-control">
+    <input id="txtEmail" type="email" placeholder="Enter your Email"  name="email" required/>
+    <small>email can't be blank!</small>
+
+</div>
 
     
     <script src="javascript/script.js"></script>
